@@ -1,0 +1,9 @@
+$( & quot; document & quot;).ready(function() {
+            var menu = $( & #39;# menu & #39;);var html2= $( & #39;# HTML4 & #39;);var Followers1= $( & #39;# HTML7 & #39;);var menuOffsetTop= menu.offset().top;
+                            var html2OffsetTop = html2.offset().top;
+                            var Followers1OffsetTop = Followers1.offset().top; $(window).scroll(function() {
+                                var w = $(this);
+                                menu.toggleClass( & #39;menu-scroll&# 39;, (w.scrollTop() & gt; menuOffsetTop));
+                                html2.toggleClass( & #39;html2fixs&# 39;, (w.scrollTop() & gt; html2OffsetTop));
+                                Followers1.toggleClass( & #39;Followersfixs&# 39;, (w.scrollTop() & gt; html2OffsetTop));
+                            }); $( & #39;# Back22ToTop & #39;).click(function(){$(&# 39; html, body & #39;).animate({scrollTop:0},300);});});
